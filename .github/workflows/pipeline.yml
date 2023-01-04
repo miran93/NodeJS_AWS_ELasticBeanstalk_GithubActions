@@ -33,8 +33,8 @@ jobs:
       - name: Set env to production
         if: endsWith(github.ref, '/main')
         run: |
-          echo "application_name=nodejs-app" >> $GITHUB_ENV
-          echo "environment_name=Nodejsapp-env" >> $GITHUB_ENV
+          echo "application_name=my-app" >> $GITHUB_ENV
+          echo "environment_name=Myapp-env" >> $GITHUB_ENV
           echo "NODE_ENV=production" >> $GITHUB_ENV
       - name: Setup node env 🏗
         uses: actions/setup-node@v2.1.2
