@@ -30,7 +30,7 @@ jobs:
           echo "environment_name=Devnodejsapp-env" >> $GITHUB_ENV
           echo "NODE_ENV=development" >> $GITHUB_ENV
 
-      - name: Set env to production
+      - name: Set env to dev
         if: endsWith(github.ref, '/main')
         run: |
           echo "application_name=miran-app" >> $GITHUB_ENV
