@@ -34,7 +34,7 @@ jobs:
         if: endsWith(github.ref, '/main')
         run: |
           echo "application_name=miran-nodeapp" >> $GITHUB_ENV
-          echo "environment_name=Miran-nodeapp-env-1" >> $GITHUB_ENV
+          echo "environment_name=Miran-nodeapp-env-3" >> $GITHUB_ENV
           echo "NODE_ENV=production" >> $GITHUB_ENV
       - name: Setup node env 🏗
         uses: actions/setup-node@v2.1.2
