@@ -79,9 +79,9 @@ jobs:
         with:
           aws_access_key: ${{secrets.ACCESS_KEY_ID}}
           aws_secret_key: ${{secrets.SECRET_ACCESS_KEY}}
-          application_name: miran-nodeapp
-          environment_name: Miran-nodeapp-env-1
-          region: ap-south-1
+          application_name: ${{ env.application_name }}
+          environment_name: ${{ env.environment_name }}
+          region: us-east-1
           version_label: "e-learn-${{ steps.format-time.outputs.replaced }}"
           deployment_package: deploy.zip
 
